@@ -15,7 +15,6 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5"
   spec.source       = { :git => "https://github.com/nicolaouG/GNImageProgressBar.git", :tag => "#{spec.version}" }
   spec.source_files = "GNImageProgressBar/**/*.{h,m,swift}"
-  spec.resources    = "GNImageProgressBar/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
   spec.framework    = "UIKit"
   spec.requires_arc = true
 
