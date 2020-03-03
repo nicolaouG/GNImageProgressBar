@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/nicolaouG/GNImageProgressBar"
   spec.screenshots  = "https://raw.githubusercontent.com/nicolaouG/GNImageProgressBar/master/imageProgress.gif"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author       = { "george" => "ch.nicolaou61@hotmail.com" }
+  spec.author       = { "george" => "georgios.nicolaou92@gmail.com" }
   spec.platform     = :ios
   spec.ios.deployment_target = "10.0"
   spec.swift_version = "5"
