@@ -20,6 +20,8 @@
 		5E553421240E5ACA006A64EB /* GNImageProgressBarDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E553420240E5ACA006A64EB /* GNImageProgressBarDemoUITests.swift */; };
 		5E55342D240E5BC2006A64EB /* GNImageProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55342C240E5BC2006A64EB /* GNImageProgressBar.swift */; };
 		5E55342F240E5CA2006A64EB /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55342E240E5CA2006A64EB /* ExampleViewController.swift */; };
+		5E553431240E9C04006A64EB /* GNImageProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5533DE240E5A19006A64EB /* GNImageProgressBar.framework */; };
+		5E553432240E9C04006A64EB /* GNImageProgressBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5533DE240E5A19006A64EB /* GNImageProgressBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,28 @@
 			remoteGlobalIDString = 5E5533FB240E5AC8006A64EB;
 			remoteInfo = GNImageProgressBarDemo;
 		};
+		5E553433240E9C04006A64EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E5533D5240E5A19006A64EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E5533DD240E5A19006A64EB;
+			remoteInfo = GNImageProgressBar;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E553435240E9C04006A64EB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5E553432240E9C04006A64EB /* GNImageProgressBar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5E5533DE240E5A19006A64EB /* GNImageProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GNImageProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E553431240E9C04006A64EB /* GNImageProgressBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +144,7 @@
 				5E553414240E5ACA006A64EB /* GNImageProgressBarDemoTests */,
 				5E55341F240E5ACA006A64EB /* GNImageProgressBarDemoUITests */,
 				5E5533DF240E5A19006A64EB /* Products */,
+				5E553430240E9C04006A64EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +220,13 @@
 			path = GNImageProgressBarDemoUITests;
 			sourceTree = "<group>";
 		};
+		5E553430240E9C04006A64EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -252,10 +284,12 @@
 				5E5533F8240E5AC8006A64EB /* Sources */,
 				5E5533F9240E5AC8006A64EB /* Frameworks */,
 				5E5533FA240E5AC8006A64EB /* Resources */,
+				5E553435240E9C04006A64EB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5E553434240E9C04006A64EB /* PBXTargetDependency */,
 			);
 			name = GNImageProgressBarDemo;
 			productName = GNImageProgressBarDemo;
@@ -452,6 +486,11 @@
 			isa = PBXTargetDependency;
 			target = 5E5533FB240E5AC8006A64EB /* GNImageProgressBarDemo */;
 			targetProxy = 5E55341D240E5ACA006A64EB /* PBXContainerItemProxy */;
+		};
+		5E553434240E9C04006A64EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E5533DD240E5A19006A64EB /* GNImageProgressBar */;
+			targetProxy = 5E553433240E9C04006A64EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
