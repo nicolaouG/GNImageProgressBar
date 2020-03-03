@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GNImageProgressBar"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "Show progress with an image."
   spec.description  = <<-DESC
   This library can be used to show progress by filling an image.
