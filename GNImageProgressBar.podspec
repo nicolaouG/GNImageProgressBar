@@ -4,10 +4,10 @@ Pod::Spec.new do |spec|
   spec.version      = "0.1.0"
   spec.summary      = "Show progress with an image."
   spec.description  = <<-DESC
-  Show progress with an image.
+  This library can be used to show progress by filling an image.
                    DESC
   spec.homepage     = "https://github.com/nicolaouG/GNImageProgressBar"
-  spec.screenshots  = "https://github.com/nicolaouG/GNImageProgressBar/blob/master/imageProgress.gif"
+  spec.screenshots  = "https://raw.githubusercontent.com/nicolaouG/GNImageProgressBar/master/imageProgress.gif"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "george" => "ch.nicolaou61@hotmail.com" }
   spec.platform     = :ios
