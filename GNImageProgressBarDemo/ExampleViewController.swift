@@ -13,10 +13,9 @@ class ExampleViewController: UIViewController {
     
     let width = min(#imageLiteral(resourceName: "united_logo").size.width, UIScreen.main.bounds.width - 40)
     let height = min(#imageLiteral(resourceName: "united_logo").size.height, UIScreen.main.bounds.height - 80)
-    lazy var minDimension = min(width, height)
     
     lazy var imageProgressBar: GNImageProgressBar = {
-        let b = GNImageProgressBar(image: #imageLiteral(resourceName: "united_logo"), size: CGSize(width: minDimension, height: minDimension), backgroundImageAlpha: 0.3, shouldShowBackgroundImage: true, fillDirection: .fromBottom, progress: 0.3)
+        let b = GNImageProgressBar(image: #imageLiteral(resourceName: "united_logo"), size: CGSize(width: width, height: height), backgroundImageAlpha: 0.3, shouldShowBackgroundImage: true, fillDirection: .fromBottom, progress: 0.3)
         b.translatesAutoresizingMaskIntoConstraints = false
         return b
     }()
@@ -36,8 +35,6 @@ class ExampleViewController: UIViewController {
     func setupConstraints() {
         NSLayoutConstraint(item: imageProgressBar, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: imageProgressBar, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: imageProgressBar, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: minDimension).isActive = true
-        NSLayoutConstraint(item: imageProgressBar, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: minDimension).isActive = true
     }
     
     @objc func viewTapped() {
