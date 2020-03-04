@@ -20,8 +20,8 @@
 		5E553421240E5ACA006A64EB /* GNImageProgressBarDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E553420240E5ACA006A64EB /* GNImageProgressBarDemoUITests.swift */; };
 		5E55342D240E5BC2006A64EB /* GNImageProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55342C240E5BC2006A64EB /* GNImageProgressBar.swift */; };
 		5E55342F240E5CA2006A64EB /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E55342E240E5CA2006A64EB /* ExampleViewController.swift */; };
-		5E553431240E9C04006A64EB /* GNImageProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5533DE240E5A19006A64EB /* GNImageProgressBar.framework */; };
-		5E553432240E9C04006A64EB /* GNImageProgressBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5533DE240E5A19006A64EB /* GNImageProgressBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E553436240EA730006A64EB /* GNImageProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5533DE240E5A19006A64EB /* GNImageProgressBar.framework */; };
+		5E553437240EA730006A64EB /* GNImageProgressBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5533DE240E5A19006A64EB /* GNImageProgressBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 			remoteGlobalIDString = 5E5533FB240E5AC8006A64EB;
 			remoteInfo = GNImageProgressBarDemo;
 		};
-		5E553433240E9C04006A64EB /* PBXContainerItemProxy */ = {
+		5E553438240EA730006A64EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E5533D5240E5A19006A64EB /* Project object */;
 			proxyType = 1;
@@ -56,13 +56,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5E553435240E9C04006A64EB /* Embed Frameworks */ = {
+		5E55343A240EA730006A64EB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5E553432240E9C04006A64EB /* GNImageProgressBar.framework in Embed Frameworks */,
+				5E553437240EA730006A64EB /* GNImageProgressBar.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E553431240E9C04006A64EB /* GNImageProgressBar.framework in Frameworks */,
+				5E553436240EA730006A64EB /* GNImageProgressBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +284,12 @@
 				5E5533F8240E5AC8006A64EB /* Sources */,
 				5E5533F9240E5AC8006A64EB /* Frameworks */,
 				5E5533FA240E5AC8006A64EB /* Resources */,
-				5E553435240E9C04006A64EB /* Embed Frameworks */,
+				5E55343A240EA730006A64EB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5E553434240E9C04006A64EB /* PBXTargetDependency */,
+				5E553439240EA730006A64EB /* PBXTargetDependency */,
 			);
 			name = GNImageProgressBarDemo;
 			productName = GNImageProgressBarDemo;
@@ -487,10 +487,10 @@
 			target = 5E5533FB240E5AC8006A64EB /* GNImageProgressBarDemo */;
 			targetProxy = 5E55341D240E5ACA006A64EB /* PBXContainerItemProxy */;
 		};
-		5E553434240E9C04006A64EB /* PBXTargetDependency */ = {
+		5E553439240EA730006A64EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5E5533DD240E5A19006A64EB /* GNImageProgressBar */;
-			targetProxy = 5E553433240E9C04006A64EB /* PBXContainerItemProxy */;
+			targetProxy = 5E553438240EA730006A64EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -648,7 +648,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -673,7 +673,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
