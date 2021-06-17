@@ -32,6 +32,8 @@ public class GNImageProgressBar: UIView {
     
     private lazy var trackIvHeightConstraint = NSLayoutConstraint(item: trackImageView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 0)
     
+    private var backgroundImage: UIImage?
+    
     public var image: UIImage
     public var size: CGSize
     public var shouldShowBackgroundImage: Bool
@@ -41,6 +43,18 @@ public class GNImageProgressBar: UIView {
     
     public var fixedSize: CGSize = .zero
     
+    public init(image: UIImage, size: CGSize, backgroundImage: UIImage, backgroundImageAlpha: CGFloat = 1, shouldShowBackgroundImage: Bool = true, fillDirection: FillDirection, progress: CGFloat = 0) {
+        self.image = image
+        self.backgroundImage = backgroundImage
+        self.size = size
+        self.shouldShowBackgroundImage = shouldShowBackgroundImage
+        self.backgroundImageAlpha = shouldShowBackgroundImage ? backgroundImageAlpha : 0
+        self.fillDirection = fillDirection
+        self.progress = progress
+        
+        super.init(frame: .zero)
+        setup()
+    }
     
     public init(image: UIImage, size: CGSize, backgroundImageAlpha: CGFloat = 0.4, shouldShowBackgroundImage: Bool = true, fillDirection: FillDirection, progress: CGFloat = 0) {
         self.image = image
@@ -82,7 +96,8 @@ public class GNImageProgressBar: UIView {
     
     private func setupImageViews() {
         fixedSize = sizeOfAspectFit(imageSize: image.size, containerSize: size)
-        backgroundImageView.image = image.resizedImageWithinRect(rectSize: fixedSize)
+        let backgroundImage = backgroundImage ?? image
+        backgroundImageView.image = backgroundImage.resizedImageWithinRect(rectSize: fixedSize)
         trackImageView.image = image.resizedImageWithinRect(rectSize: fixedSize)
     }
     
