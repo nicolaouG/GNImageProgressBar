@@ -43,22 +43,10 @@ public class GNImageProgressBar: UIView {
     
     public var fixedSize: CGSize = .zero
     
-    public init(image: UIImage, size: CGSize, backgroundImage: UIImage, backgroundImageAlpha: CGFloat = 1, shouldShowBackgroundImage: Bool = true, fillDirection: FillDirection, progress: CGFloat = 0) {
+    public init(image: UIImage, size: CGSize, backgroundImage: UIImage? = nil, backgroundImageAlpha: CGFloat = 0.4, shouldShowBackgroundImage: Bool = true, fillDirection: FillDirection, progress: CGFloat = 0) {
         self.image = image
+        self.size = size
         self.backgroundImage = backgroundImage
-        self.size = size
-        self.shouldShowBackgroundImage = shouldShowBackgroundImage
-        self.backgroundImageAlpha = shouldShowBackgroundImage ? backgroundImageAlpha : 0
-        self.fillDirection = fillDirection
-        self.progress = progress
-        
-        super.init(frame: .zero)
-        setup()
-    }
-    
-    public init(image: UIImage, size: CGSize, backgroundImageAlpha: CGFloat = 0.4, shouldShowBackgroundImage: Bool = true, fillDirection: FillDirection, progress: CGFloat = 0) {
-        self.image = image
-        self.size = size
         self.shouldShowBackgroundImage = shouldShowBackgroundImage
         self.backgroundImageAlpha = shouldShowBackgroundImage ? backgroundImageAlpha : 0
         self.fillDirection = fillDirection
