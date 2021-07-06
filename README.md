@@ -22,6 +22,10 @@ Currently, only one fill direction is supported:
 ```swift
 let imageProgressBar = GNImageProgressBar(image: myImage, size: desiredSize, backgroundImageAlpha: myAlpha, shouldShowBackgroundImage: true, fillDirection: .fromBottom, progress: 0.3)
 ```
+or with bg image
+```swift
+let imageProgressBar = GNImageProgressBar(image: myImage, size: desiredSize, backgroundImage: bgImage, backgroundImageAlpha: myAlpha, shouldShowBackgroundImage: true, fillDirection: .fromBottom, progress: 0.3)
+```
 or just
 ```swift
 let imageProgressBar = GNImageProgressBar(image: myImage, size: desiredSize, fillDirection: .fromBottom)
