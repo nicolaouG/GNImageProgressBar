@@ -84,7 +84,7 @@ public class GNImageProgressBar: UIView {
     
     private func setupImageViews() {
         fixedSize = sizeOfAspectFit(imageSize: image.size, containerSize: size)
-        let backgroundImage = backgroundImage ?? image
+        let backgroundImage = self.backgroundImage ?? image
         backgroundImageView.image = backgroundImage.resizedImageWithinRect(rectSize: fixedSize)
         trackImageView.image = image.resizedImageWithinRect(rectSize: fixedSize)
     }
